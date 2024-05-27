@@ -1,0 +1,42 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.container{
+  width: 50%;
+  margin: 0px auto;
+}
+.parent{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+ 
+}
+.child-1, .child-2, .child-3{
+  height: 200px;
+  transition: all 1s;
+  flex-grow: 1;
+}
+.parent>div:first-child{
+  background: url(./download.jpeg) no-repeat center;
+  background-size: cover;
+}
+.parent>div:nth-child(2){
+  background: url(./holi2.jpeg) no-repeat center;
+  background-size: cover;
+}
+.parent>div:last-child{
+  background: url(./holi3.jpeg) no-repeat center;
+  background-size: cover;
+}
+.parent>div:first-child:hover{
+  flex-grow: 5;
+}
+.parent>div:nth-child(2):hover{
+  flex-grow: 5;
+}
+.parent>div:last-child:hover{
+  flex-grow: 5;
+}
